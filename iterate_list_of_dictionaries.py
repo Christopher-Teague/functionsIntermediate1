@@ -16,12 +16,21 @@ def iterateDictionary(x) :
     #     for key,value in my_dict:
     #         print(key, value)
     for dict in x:
-        for key in dict:
-            val = dict[key]
-            print(key, ' - ', val)
-
+        # dict_string = ""
+        # for key,val in dict.items():
+        #     # print(key, ' - ', val)
+        #     dict_string += f"{key} - {val}, "
+        dict_string = ", ".join(f"{key} - {val}" for key,val in dict.items())
+        # test=[f"{key} - {val}" for key,val in dict.items()]
+        # print(test)
+        # print(dict.items())
+        print (dict_string)
 iterateDictionary(students)
 
+# a,b,*rest = (1,2,3,4)
+# print(a)
+# print(b)
+# print(rest)
 
 # bonus to get them to appear exactly as below!)
 
@@ -30,3 +39,6 @@ iterateDictionary(students)
 # first_name - John, last_name - Rosales
 # first_name - Mark, last_name - Guillen
 # first_name - KB, last_name - Tonel
+
+
+#Thanks Christian!

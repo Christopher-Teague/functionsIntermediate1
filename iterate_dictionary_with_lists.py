@@ -9,8 +9,10 @@ def printInfo(some_dict):
         # print(some_dict)
         num_loc = len(some_dict[key])
         print(f"{num_loc} {key}")
-        print(some_dict[key])
+        for item in some_dict[key]:
 
+            print(item)
+        print()
 printInfo(dojo)
 # output:
 # 7 LOCATIONS
@@ -31,3 +33,6 @@ printInfo(dojo)
 # Patrick
 # Minh
 # Devon
+
+
+#Thanks Christian!
